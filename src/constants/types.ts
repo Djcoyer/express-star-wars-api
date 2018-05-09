@@ -1,5 +1,6 @@
 const TYPES = {
-    PersonService: Symbol.for("PersonService")
+    CharacterService: Symbol.for("CharacterService"),
+    CharacterRepository: Symbol.for("CharacterRepository")
 };
 
 export default TYPES;

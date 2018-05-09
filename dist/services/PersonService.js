@@ -22,4 +22,4 @@ let PersonService = class PersonService {
 PersonService = __decorate([
     inversify_1.injectable()
 ], PersonService);
-exports.PersonService = PersonService;
+exports.CharacterService = PersonService;

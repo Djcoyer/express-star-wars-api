@@ -29,10 +29,10 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Array)
-], PersonController.prototype, "getPeople", null);
+], PersonController.prototype, "getCharacters", null);
 PersonController = __decorate([
     inversify_express_utils_1.controller('/people'),
-    __param(0, inversify_1.inject(types_1.default.PersonService)),
-    __metadata("design:paramtypes", [PersonService_1.PersonService])
+    __param(0, inversify_1.inject(types_1.default.CharacterService)),
+    __metadata("design:paramtypes", [PersonService_1.CharacterService])
 ], PersonController);
 exports.PersonController = PersonController;
