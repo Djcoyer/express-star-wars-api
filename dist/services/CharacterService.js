@@ -22,7 +22,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const inversify_1 = require("inversify");
 const Character_1 = require("../models/Character");
-const ValidationFunctions_1 = require("../functions/ValidationFunctions");
 const CharacterDao_1 = require("../models/dao/CharacterDao");
 const CharacterRepository_1 = require("../repositories/CharacterRepository");
 const types_1 = require("../constants/types");
@@ -41,20 +40,16 @@ let CharacterService = class CharacterService {
     }
     getCharacter(id) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.characterRepository.getCharacter(id).then(character => {
+            return yield this.characterRepository.getCharacter(id).then(characterDao => {
+                let { id, name, description, canon, era, age, movieIds } = characterDao;
+                let character = new Character_1.default(id, name, description, age, movieIds, era, canon);
                 return character;
             });
         });
     }
     updateCharacter(id, request) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.getCharacter(id).then(character => {
-                if (character == null)
-                    return null;
-                character = ValidationFunctions_1.patchObject(character, request);
-                this.characterStorage.splice(this.characterStorage.findIndex(p => p.id === id), 1, character);
-                return character;
-            });
+            return yield this.characterRepository.updateCharacter(request, id);
         });
     }
     createCharacter(request) {

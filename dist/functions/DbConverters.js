@@ -18,3 +18,5 @@ function convertFromDbObject(dbValue, daoObject) {
     }
 }
 exports.convertFromDbObject = convertFromDbObject;
+function convertFromObjectToDb(dbValue, daoObject) {
+}

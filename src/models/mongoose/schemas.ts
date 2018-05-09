@@ -11,7 +11,7 @@ const characterSchema = new Schema({
     canon: Boolean
 });
 
-const Character = mongoose.model('characters', characterSchema);
+var Character = mongoose.model('characters', characterSchema);
 
 export {
     Character

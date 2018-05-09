@@ -46,7 +46,10 @@ let CharacterController = class CharacterController {
     }
     updateCharacter(request) {
         return __awaiter(this, void 0, void 0, function* () {
-            return yield this.characterService.updateCharacter(request.params.id, request.body);
+            return yield this.characterService.updateCharacter(request.params.id, request.body)
+                .then(response => {
+                return { id: request.params.id };
+            });
         });
     }
     createCharacter(request) {

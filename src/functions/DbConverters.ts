@@ -19,3 +19,7 @@ function convertFromDbObject(dbValue: any, daoObject: any): any {
         }
     }
 }
+
+function convertFromObjectToDb(dbValue: any, daoObject: any) :any {
+
+}

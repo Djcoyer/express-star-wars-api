@@ -18,6 +18,7 @@ const inversify_1 = require("inversify");
 const CharacterDao_1 = require("../models/dao/CharacterDao");
 const schemas_1 = require("../models/mongoose/schemas");
 const DbConverters_1 = require("../functions/DbConverters");
+const ValidationFunctions_1 = require("../functions/ValidationFunctions");
 let CharacterRepository = class CharacterRepository {
     createCharacter(characterDao) {
         let { name, age, era, movieIds, description, canon } = characterDao;
@@ -30,6 +31,7 @@ let CharacterRepository = class CharacterRepository {
             canon
         }).save()
             .then(character => {
+            console.log(character);
         });
         return null;
     }
@@ -58,6 +60,22 @@ let CharacterRepository = class CharacterRepository {
                     });
                 }
                 return returnedCharacters;
+            });
+        });
+    }
+    updateCharacter(requestObject, id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return schemas_1.Character.findOne({ _id: id })
+                .then(character => {
+                if (character) {
+                    character = ValidationFunctions_1.patchDbObject(requestObject, character, id);
+                    console.log(character);
+                    character.save(err => {
+                        if (err) {
+                            console.log(err);
+                        }
+                    });
+                }
             });
         });
     }

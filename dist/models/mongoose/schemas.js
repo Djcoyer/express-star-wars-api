@@ -11,5 +11,5 @@ const characterSchema = new Schema({
     era: String,
     canon: Boolean
 });
-const Character = mongoose.model('characters', characterSchema);
+var Character = mongoose.model('characters', characterSchema);
 exports.Character = Character;
