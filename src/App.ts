@@ -3,12 +3,18 @@ import {InversifyExpressServer} from "inversify-express-utils";
 import {Container} from "inversify";
 import * as bodyParser from 'body-parser';
 import TYPES from './constants/types';
-import './controllers/PeopleController';
-import {PersonService} from "./services/PersonService";
+import './controllers/CharacterController';
+import {CharacterService} from "./services/CharacterService";
+import {mongoURI} from "./config/Keys";
+import {CharacterRepository} from "./repositories/CharacterRepository";
+const mongoose = require('mongoose');
 
 let container = new Container();
-container.bind<PersonService>(TYPES.PersonService).to(PersonService);
+container.bind<CharacterService>(TYPES.CharacterService).to(CharacterService);
+container.bind<CharacterRepository>(TYPES.CharacterRepository).to(CharacterRepository);
 
+
+mongoose.connect(mongoURI);
 let server = new InversifyExpressServer(container);
 
 server.setConfig(app => {

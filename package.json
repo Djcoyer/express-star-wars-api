@@ -28,6 +28,7 @@
     "firebase-admin": "^5.11.0",
     "inversify": "^4.2.0",
     "inversify-express-utils": "^5.2.1",
+    "mongoose": "^5.0.17",
     "morgan": "^1.7.0",
     "reflect-metadata": "^0.1.10",
     "uuid": "^3.2.1"
