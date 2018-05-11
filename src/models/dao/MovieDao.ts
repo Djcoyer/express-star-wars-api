@@ -1,6 +1,7 @@
 import UuidStatic = require("uuid");
 
-export class Movie {
+export default class MovieDao {
+
     id:string;
     name:string;
     releaseDate:Date;

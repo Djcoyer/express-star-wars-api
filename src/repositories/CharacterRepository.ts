@@ -3,7 +3,7 @@ import {CharacterDao} from "../models/dao/CharacterDao";
 import * as mongoose from 'mongoose';
 import {Character} from '../models/mongoose/schemas';
 import {convertFromDbObject} from "../functions/DbConverters";
-import {patchDbObject} from "../functions/ValidationFunctions";
+import {patchDbObject} from "../functions/PatchFunctions";
 
 
 @injectable()

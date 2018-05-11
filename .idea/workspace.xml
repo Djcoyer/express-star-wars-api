@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e3021d-daef-47bc-9c2b-7132d44e5b4c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/constants/enums.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/models/requests/character/CreateCharacterRequest.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/constants/arrays.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/controllers/MovieController.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/functions/MovieTransformer.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/dao/MovieDao.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/repositories/MovieRepository.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/services/MovieService.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/controllers/CharacterController.js" afterPath="$PROJECT_DIR$/dist/controllers/CharacterController.js" />
-      <change beforePath="$PROJECT_DIR$/dist/functions/ValidationFunctions.js" afterPath="$PROJECT_DIR$/dist/functions/ValidationFunctions.js" />
-      <change beforePath="$PROJECT_DIR$/dist/repositories/CharacterRepository.js" afterPath="$PROJECT_DIR$/dist/repositories/CharacterRepository.js" />
-      <change beforePath="$PROJECT_DIR$/dist/services/CharacterService.js" afterPath="$PROJECT_DIR$/dist/services/CharacterService.js" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/CharacterController.ts" afterPath="$PROJECT_DIR$/src/controllers/CharacterController.ts" />
-      <change beforePath="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" afterPath="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" />
+      <change beforePath="$PROJECT_DIR$/src/App.ts" afterPath="$PROJECT_DIR$/src/App.ts" />
+      <change beforePath="$PROJECT_DIR$/src/constants/types.ts" afterPath="$PROJECT_DIR$/src/constants/types.ts" />
+      <change beforePath="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" afterPath="$PROJECT_DIR$/src/functions/PatchFunctions.ts" />
+      <change beforePath="$PROJECT_DIR$/src/models/Movie.ts" afterPath="$PROJECT_DIR$/src/models/Movie.ts" />
+      <change beforePath="$PROJECT_DIR$/src/models/mongoose/schemas.ts" afterPath="$PROJECT_DIR$/src/models/mongoose/schemas.ts" />
       <change beforePath="$PROJECT_DIR$/src/repositories/CharacterRepository.ts" afterPath="$PROJECT_DIR$/src/repositories/CharacterRepository.ts" />
-      <change beforePath="$PROJECT_DIR$/src/services/CharacterService.ts" afterPath="$PROJECT_DIR$/src/services/CharacterService.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,15 +26,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="App.ts" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="-9">
+              <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="types.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/constants/types.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieService.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/MovieService.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movie.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/Movie.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieRepository.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/repositories/MovieRepository.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterRepository.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/repositories/CharacterRepository.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-119">
+              <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="48" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterService.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/CharacterService.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="82" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,15 +129,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/controllers/PlanetsController.ts" />
         <option value="$PROJECT_DIR$/src/services/PlanetService.ts" />
-        <option value="$PROJECT_DIR$/src/models/Movie.ts" />
         <option value="$PROJECT_DIR$/src/models/Person.ts" />
         <option value="$PROJECT_DIR$/src/models/Planet.ts" />
         <option value="$PROJECT_DIR$/src/config/Keys.ts" />
         <option value="$PROJECT_DIR$/src/models/Character.ts" />
-        <option value="$PROJECT_DIR$/src/constants/types.ts" />
-        <option value="$PROJECT_DIR$/src/App.ts" />
         <option value="$PROJECT_DIR$/dist/repositories/CharacterRepository.js" />
-        <option value="$PROJECT_DIR$/src/models/mongoose/schemas.ts" />
         <option value="$PROJECT_DIR$/src/functions/DbConverters.ts" />
         <option value="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" />
         <option value="$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts" />
@@ -85,6 +142,16 @@
         <option value="$PROJECT_DIR$/src/controllers/CharacterController.ts" />
         <option value="$PROJECT_DIR$/src/services/CharacterService.ts" />
         <option value="$PROJECT_DIR$/src/constants/enums.ts" />
+        <option value="$PROJECT_DIR$/src/models/mongoose/schemas.ts" />
+        <option value="$PROJECT_DIR$/src/models/dao/MovieDao.ts" />
+        <option value="$PROJECT_DIR$/src/services/MovieRepository.ts" />
+        <option value="$PROJECT_DIR$/src/constants/types.ts" />
+        <option value="$PROJECT_DIR$/src/functions/MovieTransformer.ts" />
+        <option value="$PROJECT_DIR$/src/App.ts" />
+        <option value="$PROJECT_DIR$/src/controllers/MovieController.ts" />
+        <option value="$PROJECT_DIR$/src/services/MovieService.ts" />
+        <option value="$PROJECT_DIR$/src/models/Movie.ts" />
+        <option value="$PROJECT_DIR$/src/repositories/MovieRepository.ts" />
       </list>
     </option>
   </component>
@@ -127,6 +194,41 @@
               <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -136,8 +238,698 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../repos/home-ui" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/package-lock.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/App.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/constants/types.ts</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/changelog.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/any.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/assert.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/async.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/bind.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/bluebird.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/call_get.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/cancel.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/catch_filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/context.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/debuggability.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/direct_resolve.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/each.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/errors.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/es5.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/finally.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/generators.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/join.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/map.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/method.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/nodeback.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/nodeify.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/promise_array.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/promisify.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/props.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/queue.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/race.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/reduce.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/schedule.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/settle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/some.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/synchronous_inspection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/thenables.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/timers.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/using.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/util.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/HISTORY.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/LICENSE.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/browser_build/bson.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/browser_build/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/binary.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/bson.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/code.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/db_ref.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/decimal128.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/double.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/float_parser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/int_32.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/long.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/map.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/max_key.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/min_key.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/objectid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/parser/calculate_size.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/parser/deserializer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/parser/serializer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/regexp.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/symbol.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/lib/bson/timestamp.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bson/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/docs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/gulpfile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/test/examples.test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/test/post.test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/test/pre.test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/kareem/test/wrap.test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/lodash.get/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/lodash.get/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/lodash.get/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/lodash.get/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/.coveralls.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/.eslintrc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/.evergreen/config.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/.evergreen/install-dependencies.sh</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/.evergreen/run-tests.sh</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/HISTORY.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/THIRD-PARTY-NOTICES</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/conf.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/gssapi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/mongocr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/plain.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/scram.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/sspi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/x509.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/apm.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/command_result.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/commands.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/connection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/logger.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/pool.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/utils.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/cursor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/error.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/sessions.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/tools/smoke_plugin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/mongos.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/read_preference.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/replset.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/replset_state.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/server.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/shared.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/uri_parser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/utils.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/2_6_support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/3_2_support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/compression.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/lib/wireprotocol/shared.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb-core/yarn.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/.coveralls.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/.eslintrc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/CHANGES_3.0.0.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/CODE_OF_CONDUCT.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/CONTRIBUTING.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/HISTORY.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/THIRD-PARTY-NOTICES</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/boot_auth.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/conf.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/insert_bench.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/admin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/aggregation_cursor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/apm.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/authenticate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/bulk/common.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/bulk/ordered.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/bulk/unordered.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/change_stream.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/collection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/command_cursor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/cursor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/db.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/download.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/upload.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/chunk.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/grid_store.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/topologies/mongos.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/topologies/replset.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/topologies/server.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/topologies/topology_base.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/url_parser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/lib/utils.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongodb/yarn.lock</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/.eslintignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/.github/ISSUE_TEMPLATE.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/.github/PULL_REQUEST_TEMPLATE.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/CONTRIBUTING.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/History.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/browser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/aggregate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/aggregate/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/doc-methods.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/express/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/app.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/modelA.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/express/connection-sharing/routes.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/geoJSONSchema.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/geoJSONexample.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/geospatial.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/geospatial/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/globalschemas/gs_example.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/globalschemas/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/lean/lean.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/lean/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/lean/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/mapreduce.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/mapreduce/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/population/population-across-three-collections.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/population/population-basic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/population/population-of-existing-doc.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/population/population-options.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/population/population-plain-objects.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/promises/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/promises/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/promises/promise.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/querybuilder/querybuilder.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/replicasets/replica-sets.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/schema/schema.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/schema/storing-schemas-as-json/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/schema/storing-schemas-as-json/schema.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/statics/person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/examples/statics/statics.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/aggregate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/browser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/browserDocument.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/cast.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/collection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/connection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/connectionstate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/cursor/AggregationCursor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/cursor/ChangeStream.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/cursor/QueryCursor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/document.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/document_provider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/SPEC.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/browser/ReadPreference.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/browser/binary.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/browser/decimal128.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/browser/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/browser/objectid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/index.web.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/ReadPreference.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/decimal128.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/browserMissingSchema.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/cast.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/disconnected.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/divergentArray.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/messages.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/missingSchema.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/notFound.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/objectExpected.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/objectParameter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/overwriteModel.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/strict.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/validation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/validator.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/error/version.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/internal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/model.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/options.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/plugins/idGetter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/plugins/removeSubdocs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/plugins/saveSubdocs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/plugins/sharding.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/plugins/validateBeforeSave.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/promise_provider.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/query.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/queryhelpers.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/array.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/boolean.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/buffer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/date.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/decimal128.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/documentarray.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/embedded.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/mixed.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/number.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/objectid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/operators/bitwise.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/operators/exists.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/operators/geospatial.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/operators/helpers.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/operators/type.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schema/string.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/schematype.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/common.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/cursor/eachAsync.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/document/cleanModifiedSubpaths.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/document/compile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/model/applyHooks.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/model/applyMethods.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/model/applyStatics.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/model/discriminator.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/populate/getSchemaTypes.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/populate/getVirtual.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/projection/isDefiningProjection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/projection/isExclusive.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/projection/isInclusive.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/projection/isPathSelectedInclusive.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/query/castUpdate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/query/hasDollarKeys.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/query/selectPopulatedFields.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/setDefaultsOnInsert.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/update/modifiedPaths.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/services/updateValidators.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/statemachine.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/array.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/buffer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/decimal128.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/documentarray.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/embedded.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/objectid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/types/subdocument.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/utils.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/lib/virtualtype.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/migrating_to_5.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/CHANGELOG.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/apply.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/applyEach.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/applyEachSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/asyncify.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/auto.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/autoInject.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/cargo.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/compose.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/concat.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/concatSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/constant.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/detect.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/detectLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/detectSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dir.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dist/async.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dist/async.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/doDuring.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/doUntil.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/doWhilst.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/during.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/each.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachOf.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachOfLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachOfSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/ensureAsync.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/every.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/everyLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/everySeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/filterLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/filterSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forever.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/DoublyLinkedList.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/applyEach.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/breakLoop.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/concat.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/consoleFunc.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/createTester.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doParallel.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doParallelLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/eachOfLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/findGetResult.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/getIterator.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/initialParams.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/iterator.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/map.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/notId.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/once.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/onlyOnce.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/parallel.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/queue.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/reject.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/rest.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/setImmediate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/withoutIndex.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/log.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/map.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapValues.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapValuesLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapValuesSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/memoize.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/nextTick.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/parallel.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/parallelLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/priorityQueue.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/queue.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/race.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reduce.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reduceRight.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reflect.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reflectAll.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reject.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/rejectLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/rejectSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/retry.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/retryable.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/seq.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/series.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/setImmediate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/some.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/someLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/someSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/sortBy.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/timeout.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/times.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/timesLimit.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/timesSeries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/transform.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/unmemoize.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/until.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/waterfall.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/async/whilst.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/license.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/readme.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/release-items.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/static.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/tools/auth.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/tools/repl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/tools/sharded.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mongoose/website.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/History.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/bench.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/bench.log</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/bench.out</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/component.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/lib/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mpath/test/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/History.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/collection/collection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/collection/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/collection/node.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/env.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/mquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/permissions.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/lib/utils.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.coveralls.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.eslintrc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.npmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/CHANGELOG.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/component.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/karma.conf.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/node.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/browser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/debug.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/inspector-log.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/node.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/ms/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/ms/license.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/ms/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/ms/readme.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/.npmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/History.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/bench.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/component.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/lib/sliced.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/node_modules/sliced/test/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/test/collection/browser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/test/collection/mongo.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/test/collection/node.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/test/env.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/test/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/mquery/test/utils.test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/.npmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/History.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/Makefile</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/regexp-clone/test/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/.npmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/HISTORY.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/.bin/semver</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/.bin/semver.cmd</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/semver/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/semver/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/semver/bin/semver</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/semver/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/semver/range.bnf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/node_modules/semver/semver.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/test/nestedTest/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/test/nestedTest/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/require_optional/test/require_optional_tests.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/resolve-from/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/resolve-from/license</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/resolve-from/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/resolve-from/readme.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/sliced/History.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/sliced/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/sliced/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/sliced/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/sliced/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/config/Keys.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/constants/arrays.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/controllers/CharacterController.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/controllers/PlanetsController.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/functions/DbConverters.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/functions/ValidationFunctions.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/Character.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/Movie.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/Planet.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/dao/CharacterDao.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/mongoose/schemas.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/repositories/CharacterRepository.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/services/CharacterService.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/services/PlanetService.ts</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/dist/App.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/dist/constants/types.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/dist/controllers/PeopleController.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/dist/controllers/PersonController.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/dist/models/Person.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/dist/services/PersonService.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/controllers/PeopleController.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/models/Person.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/services/PersonService.ts</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,7 +962,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22798000" />
+    <option name="totallyTimeSpent" value="29631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -180,20 +972,33 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,97 +1014,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/services/PlanetService.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Planet.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Movie.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="15000" column="10" lean-forward="false" selection-start-line="15000" selection-start-column="10" selection-end-line="15000" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/PlanetsController.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/controllers/CharacterController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/repositories/CharacterRepository.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="911" column="18" lean-forward="false" selection-start-line="911" selection-start-column="18" selection-end-line="911" selection-end-column="18" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/mongoose/schemas.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions/ValidationFunctions.ts">
+    <entry file="file://$PROJECT_DIR$/src/functions/PatchFunctions.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -368,7 +1083,7 @@
         <state relative-caret-position="416">
           <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -377,9 +1092,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="64" column="35" lean-forward="false" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -393,10 +1106,304 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="246">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Movie.ts" />
+    <entry file="file://$PROJECT_DIR$/src/routes/PersonRouter.ts" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/constants/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Person.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/PersonService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/PeopleController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/types.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/PlanetService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Planet.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="15000" column="10" lean-forward="false" selection-start-line="15000" selection-start-column="10" selection-end-line="15000" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/PlanetsController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/controllers/CharacterController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/repositories/CharacterRepository.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="911" column="18" lean-forward="false" selection-start-line="911" selection-start-column="18" selection-end-line="911" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Character.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/dao/CharacterDao.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/arrays.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/Keys.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/dao/MovieDao.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/mongoose/schemas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/types.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions/PatchFunctions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="9" column="64" lean-forward="false" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/CharacterController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/MovieController.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions/MovieTransformer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#46#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/CharacterService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Movie.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions/DbConverters.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/MovieService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/CharacterRepository.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="48" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/MovieRepository.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
