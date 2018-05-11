@@ -23,7 +23,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const inversify_express_utils_1 = require("inversify-express-utils");
 const inversify_1 = require("inversify");
-const Character_1 = require("../models/Character");
 const CharacterService_1 = require("../services/CharacterService");
 const types_1 = require("../constants/types");
 let CharacterController = class CharacterController {
@@ -53,7 +52,14 @@ let CharacterController = class CharacterController {
         });
     }
     createCharacter(request) {
-        return this.characterService.createCharacter(request.body);
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.characterService.createCharacter(request.body);
+        });
+    }
+    deleteCharacter(request) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.characterService.deleteCharacter(request.params.id);
+        });
     }
 };
 __decorate([
@@ -78,8 +84,14 @@ __decorate([
     inversify_express_utils_1.httpPost('/'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
-    __metadata("design:returntype", Character_1.default)
+    __metadata("design:returntype", Promise)
 ], CharacterController.prototype, "createCharacter", null);
+__decorate([
+    inversify_express_utils_1.httpDelete('/:id'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], CharacterController.prototype, "deleteCharacter", null);
 CharacterController = __decorate([
     inversify_express_utils_1.controller('/characters'),
     __param(0, inversify_1.inject(types_1.default.CharacterService)),

@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e3021d-daef-47bc-9c2b-7132d44e5b4c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/constants/enums.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/dist/models/requests/character/CreateCharacterRequest.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/constants/arrays.ts" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/dist/controllers/CharacterController.js" afterPath="$PROJECT_DIR$/dist/controllers/CharacterController.js" />
-      <change beforePath="$PROJECT_DIR$/dist/functions/DbConverters.js" afterPath="$PROJECT_DIR$/dist/functions/DbConverters.js" />
       <change beforePath="$PROJECT_DIR$/dist/functions/ValidationFunctions.js" afterPath="$PROJECT_DIR$/dist/functions/ValidationFunctions.js" />
-      <change beforePath="$PROJECT_DIR$/dist/models/mongoose/schemas.js" afterPath="$PROJECT_DIR$/dist/models/mongoose/schemas.js" />
       <change beforePath="$PROJECT_DIR$/dist/repositories/CharacterRepository.js" afterPath="$PROJECT_DIR$/dist/repositories/CharacterRepository.js" />
       <change beforePath="$PROJECT_DIR$/dist/services/CharacterService.js" afterPath="$PROJECT_DIR$/dist/services/CharacterService.js" />
       <change beforePath="$PROJECT_DIR$/src/controllers/CharacterController.ts" afterPath="$PROJECT_DIR$/src/controllers/CharacterController.ts" />
-      <change beforePath="$PROJECT_DIR$/src/functions/DbConverters.ts" afterPath="$PROJECT_DIR$/src/functions/DbConverters.ts" />
       <change beforePath="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" afterPath="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" />
-      <change beforePath="$PROJECT_DIR$/src/models/mongoose/schemas.ts" afterPath="$PROJECT_DIR$/src/models/mongoose/schemas.ts" />
       <change beforePath="$PROJECT_DIR$/src/repositories/CharacterRepository.ts" afterPath="$PROJECT_DIR$/src/repositories/CharacterRepository.ts" />
       <change beforePath="$PROJECT_DIR$/src/services/CharacterService.ts" afterPath="$PROJECT_DIR$/src/services/CharacterService.ts" />
     </list>
@@ -28,80 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="416">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Keys.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/Keys.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterController.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controllers/CharacterController.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterService.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/CharacterService.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterRepository.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repositories/CharacterRepository.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="57" column="76" lean-forward="false" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbConverters.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/functions/DbConverters.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidationFunctions.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/functions/ValidationFunctions.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -139,16 +73,18 @@
         <option value="$PROJECT_DIR$/src/models/Planet.ts" />
         <option value="$PROJECT_DIR$/src/config/Keys.ts" />
         <option value="$PROJECT_DIR$/src/models/Character.ts" />
-        <option value="$PROJECT_DIR$/src/models/dao/CharacterDao.ts" />
         <option value="$PROJECT_DIR$/src/constants/types.ts" />
         <option value="$PROJECT_DIR$/src/App.ts" />
         <option value="$PROJECT_DIR$/dist/repositories/CharacterRepository.js" />
         <option value="$PROJECT_DIR$/src/models/mongoose/schemas.ts" />
         <option value="$PROJECT_DIR$/src/functions/DbConverters.ts" />
-        <option value="$PROJECT_DIR$/src/services/CharacterService.ts" />
-        <option value="$PROJECT_DIR$/src/controllers/CharacterController.ts" />
         <option value="$PROJECT_DIR$/src/functions/ValidationFunctions.ts" />
+        <option value="$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts" />
+        <option value="$PROJECT_DIR$/src/models/dao/CharacterDao.ts" />
         <option value="$PROJECT_DIR$/src/repositories/CharacterRepository.ts" />
+        <option value="$PROJECT_DIR$/src/controllers/CharacterController.ts" />
+        <option value="$PROJECT_DIR$/src/services/CharacterService.ts" />
+        <option value="$PROJECT_DIR$/src/constants/enums.ts" />
       </list>
     </option>
   </component>
@@ -191,56 +127,6 @@
               <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mongoose" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mongoose" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="mongoose" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="schema" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="star-wars-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="star-wars-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -250,7 +136,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../repos/home-ui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunDashboard">
@@ -279,16 +165,15 @@
       <option name="presentableId" value="Default" />
       <updated>1525459770453</updated>
       <workItem from="1525459771614" duration="301000" />
-      <workItem from="1525878300786" duration="17603000" />
+      <workItem from="1525878300786" duration="22379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18022000" />
+    <option name="totallyTimeSpent" value="22798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -297,7 +182,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -380,40 +265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Character.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/types.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/dao/CharacterDao.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/controllers/CharacterController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -426,14 +277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/Keys.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -456,49 +299,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions/DbConverters.ts">
+    <entry file="file://$PROJECT_DIR$/src/functions/ValidationFunctions.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/CharacterRepository.ts">
+    <entry file="file://$PROJECT_DIR$/src/functions/DbConverters.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="57" column="76" lean-forward="false" selection-start-line="57" selection-start-column="76" selection-end-line="57" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/CharacterService.ts">
+    <entry file="file://$PROJECT_DIR$/src/models/Character.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/dao/CharacterDao.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/CharacterController.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
-          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/types.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/requests/character/CreateCharacterRequest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/constants/arrays.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/CharacterService.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions/ValidationFunctions.ts">
+    <entry file="file://$PROJECT_DIR$/src/repositories/CharacterRepository.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="178">
+          <caret line="64" column="35" lean-forward="false" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/Keys.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

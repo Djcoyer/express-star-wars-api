@@ -25,13 +25,19 @@ const Character_1 = require("../models/Character");
 const CharacterDao_1 = require("../models/dao/CharacterDao");
 const CharacterRepository_1 = require("../repositories/CharacterRepository");
 const types_1 = require("../constants/types");
+const CreateCharacterRequest_1 = require("../models/requests/character/CreateCharacterRequest");
+const enums_1 = require("../constants/enums");
 let CharacterService = class CharacterService {
     constructor(characterRepository) {
         this.characterRepository = characterRepository;
-        this.characterStorage = [
-            new Character_1.default("5104707d-9c5a-4088-96ba-c14a79df2cc3", "Luke Skywalker", "A young farmboy who was destined to be a great jedi master", 20, [], "Original Trilogy", true),
-            new Character_1.default("5104707d-9c5a-4088-96ba-w9398fhah134", "Han Solo", "A rugged smuggler ", 30, [], "Original Trilogy", true)
-        ];
+    }
+    createCharacter(request) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let createCharacterRequest = this.formatCreateCharacterRequest(request);
+            let { name, age, era, movieIds, description, canon } = createCharacterRequest;
+            let characterDao = new CharacterDao_1.CharacterDao(null, name, description, age, movieIds, era, canon);
+            return yield this.characterRepository.createCharacter(characterDao);
+        });
     }
     getCharacters() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -41,6 +47,8 @@ let CharacterService = class CharacterService {
     getCharacter(id) {
         return __awaiter(this, void 0, void 0, function* () {
             return yield this.characterRepository.getCharacter(id).then(characterDao => {
+                if (characterDao == null)
+                    throw new Error("Not found");
                 let { id, name, description, canon, era, age, movieIds } = characterDao;
                 let character = new Character_1.default(id, name, description, age, movieIds, era, canon);
                 return character;
@@ -52,12 +60,44 @@ let CharacterService = class CharacterService {
             return yield this.characterRepository.updateCharacter(request, id);
         });
     }
-    createCharacter(request) {
-        let character = request;
-        let { name, age, era, movieIds, description, canon } = character;
-        let characterDao = new CharacterDao_1.CharacterDao(null, name, description, age, movieIds, era, canon);
-        this.characterRepository.createCharacter(characterDao);
-        return null;
+    deleteCharacter(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.characterRepository.deleteCharacter(id);
+        });
+    }
+    //region HELPERS
+    formatCreateCharacterRequest(request) {
+        if (request == null || typeof request != "object")
+            throw new Error();
+        let keys = Object.keys(request);
+        if (!keys || keys.length === 0) {
+            throw new Error();
+        }
+        let createCharacterRequest = new CreateCharacterRequest_1.default();
+        let expectedKeys = Object.keys(createCharacterRequest);
+        keys.map(key => {
+            if (expectedKeys.indexOf(key) > -1)
+                createCharacterRequest[key] = request[key];
+        });
+        this.validateCreateCharacterRequest(createCharacterRequest);
+        return createCharacterRequest;
+    }
+    validateCreateCharacterRequest(request) {
+        if (request == null || Object.keys(request).length === 0)
+            throw new Error("Request was null");
+        if (request.name == null || request.name === "")
+            throw new Error("Name cannot be null");
+        if (request.age == null || request.age === 0)
+            throw new Error("Age must be supplied");
+        if (request.era) {
+            let eraExists = false;
+            enums_1.test.map(era => {
+                if (era.localeCompare(request.era) === 0)
+                    eraExists = true;
+            });
+            if (!eraExists)
+                throw new Error("Invalid value supplied for era");
+        }
     }
 };
 CharacterService = __decorate([

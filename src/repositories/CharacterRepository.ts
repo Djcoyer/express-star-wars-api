@@ -9,9 +9,9 @@ import {patchDbObject} from "../functions/ValidationFunctions";
 @injectable()
 export class CharacterRepository {
 
-    public createCharacter(characterDao: CharacterDao): CharacterDao {
+    public async createCharacter(characterDao: CharacterDao): Promise<CharacterDao> {
         let {name, age, era, movieIds, description, canon} = characterDao;
-        new Character({
+        return await new Character({
             name,
             age,
             era,
@@ -21,8 +21,15 @@ export class CharacterRepository {
         }).save()
             .then(character => {
                 console.log(character);
+                characterDao.id = character._id;
+                return characterDao;
+            })
+            .catch(err =>{
+                if(err) {
+                    console.log(err);
+                    throw new Error("Failed to create character");
+                }
             });
-        return null;
     }
 
     public async getCharacter(id: string): Promise<CharacterDao> {
@@ -62,6 +69,14 @@ export class CharacterRepository {
                         }
                     });
                 }
+            });
+    }
+
+    public async deleteCharacter(id:string): Promise<void> {
+        return await Character.findOneAndRemove({_id:id}, () => {})
+            .catch(err => {
+                if(err)
+                    throw new Error("Could not remove character");
             });
     }
 }

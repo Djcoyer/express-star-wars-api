@@ -1,5 +1,8 @@
 import * as express from 'express';
-import {response, requestParam, controller, httpGet, httpPost, httpPut, httpPatch} from 'inversify-express-utils';
+import {
+    response, requestParam, controller, httpGet, httpPost, httpPut, httpPatch,
+    httpDelete
+} from 'inversify-express-utils';
 import {inject} from "inversify";
 
 import Character from "../models/Character";
@@ -35,7 +38,12 @@ export class CharacterController {
     }
 
     @httpPost('/')
-    public createCharacter(request: express.Request): Character {
-        return this.characterService.createCharacter(request.body);
+    public async createCharacter(request: express.Request): Promise<Character> {
+        return await this.characterService.createCharacter(request.body);
+    }
+
+    @httpDelete('/:id')
+    public async deleteCharacter(request: express.Request): Promise<void> {
+        return await this.characterService.deleteCharacter(request.params.id);
     }
 }

@@ -21,19 +21,28 @@ const DbConverters_1 = require("../functions/DbConverters");
 const ValidationFunctions_1 = require("../functions/ValidationFunctions");
 let CharacterRepository = class CharacterRepository {
     createCharacter(characterDao) {
-        let { name, age, era, movieIds, description, canon } = characterDao;
-        new schemas_1.Character({
-            name,
-            age,
-            era,
-            movieIds,
-            description,
-            canon
-        }).save()
-            .then(character => {
-            console.log(character);
+        return __awaiter(this, void 0, void 0, function* () {
+            let { name, age, era, movieIds, description, canon } = characterDao;
+            return yield new schemas_1.Character({
+                name,
+                age,
+                era,
+                movieIds,
+                description,
+                canon
+            }).save()
+                .then(character => {
+                console.log(character);
+                characterDao.id = character._id;
+                return characterDao;
+            })
+                .catch(err => {
+                if (err) {
+                    console.log(err);
+                    throw new Error("Failed to create character");
+                }
+            });
         });
-        return null;
     }
     getCharacter(id) {
         return __awaiter(this, void 0, void 0, function* () {
@@ -69,13 +78,21 @@ let CharacterRepository = class CharacterRepository {
                 .then(character => {
                 if (character) {
                     character = ValidationFunctions_1.patchDbObject(requestObject, character, id);
-                    console.log(character);
                     character.save(err => {
                         if (err) {
                             console.log(err);
                         }
                     });
                 }
+            });
+        });
+    }
+    deleteCharacter(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield schemas_1.Character.findOneAndRemove({ _id: id }, () => { })
+                .catch(err => {
+                if (err)
+                    throw new Error("Could not remove character");
             });
         });
     }

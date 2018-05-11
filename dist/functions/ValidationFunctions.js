@@ -13,17 +13,14 @@ function patchObject(originalObject, requestObject) {
 }
 exports.patchObject = patchObject;
 function patchDbObject(requestObject, dbObject, id) {
-    console.log(id == dbObject['_id']);
     if (id != dbObject['_id'])
         return null;
     let convertedDbObject = dbObject.toObject();
     let dbKeys = Object.keys(convertedDbObject);
     dbKeys.map(key => {
-        console.log(key);
         if (requestObject.hasOwnProperty(key))
-            console.log("HERE");
-        if (typeof requestObject[key] === typeof dbObject[key])
-            dbObject[key] = requestObject[key];
+            if (typeof requestObject[key] === typeof dbObject[key])
+                dbObject[key] = requestObject[key];
     });
     return dbObject;
 }
