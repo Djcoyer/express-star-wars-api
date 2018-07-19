@@ -1,7 +1,7 @@
 import {MovieService} from "../services/MovieService";
 import TYPES from "../constants/types";
 import {inject} from "inversify";
-import {controller, httpDelete, httpGet, httpPatch, httpPost} from "inversify-express-utils";
+import {controller, httpDelete, httpGet, httpPatch, httpPost, queryParam} from "inversify-express-utils";
 import {Movie} from "../models/Movie";
 import {Request} from 'express';
 
@@ -19,7 +19,13 @@ export class MovieController {
     }
 
     @httpGet('/')
-    public async getMovies(request:Request): Promise<Movie[]> {
+    public async getMovies(request:Request, @queryParam("era") eraQuery:string): Promise<Movie[]> {
+        if(eraQuery != null) {
+            return await this.movieService.getMoviesByEra(eraQuery)
+            .then(movies => {
+                return movies;
+            });
+        }
         return await this.movieService.getMovies()
             .then(movies => {
                 return movies;

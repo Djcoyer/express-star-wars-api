@@ -3,6 +3,7 @@ import MovieDao from "../models/dao/MovieDao";
 import {Character, Movie} from "../models/mongoose/schemas";
 import {convertFromDbObject} from "../functions/DbConverters";
 import {patchDbObject} from "../functions/PatchFunctions";
+import { getDaosFromDbObjects } from "../functions/CommonFunctions";
 
 @injectable()
 export class MovieRepository {
@@ -31,14 +32,14 @@ export class MovieRepository {
     public async getMovies(): Promise<MovieDao[]> {
         return await Movie.find()
             .then(dbMovies => {
-               let movieDaos: MovieDao[] = [];
-               if(dbMovies && dbMovies.length)
-                   dbMovies.map(dbMovie => {
-                      let movieDao:MovieDao = convertFromDbObject(dbMovie, new MovieDao());
-                      movieDaos.push(movieDao);
-                   });
-               return movieDaos;
+              return getDaosFromDbObjects<MovieDao>(dbMovies, new MovieDao());
             });
+    }
+
+    public async getMoviesByEra(era:string): Promise<MovieDao[]> {
+        return await Movie.find({era}, dbMovies => {
+            return getDaosFromDbObjects<MovieDao>(dbMovies, new MovieDao());
+        });
     }
 
     public async getMovie(id:string): Promise<MovieDao> {

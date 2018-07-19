@@ -30,6 +30,21 @@ export class MovieService {
             })
     }
 
+    public async getMoviesByEra(era:string): Promise<Movie[]> {
+        return await this.movieRepository.getMoviesByEra(era)
+        .then(dbMovies => {
+            if(dbMovies) {
+                let movies:Movie[];
+                dbMovies.map(dbMovie => {
+                    let movie:Movie = transformDao(dbMovie);
+                    movies.push(movie);
+                });
+                return movies;
+            }
+            else return null;
+        })
+    }
+
     public async getMovie(id:string): Promise<Movie> {
         return await this.movieRepository.getMovie(id)
             .then(dbMovie => {
