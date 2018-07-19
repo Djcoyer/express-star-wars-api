@@ -20,13 +20,11 @@ export class CharacterRepository {
             canon
         }).save()
             .then(character => {
-                console.log(character);
                 characterDao.id = character._id;
                 return characterDao;
             })
             .catch(err =>{
                 if(err) {
-                    console.log(err);
                     throw new Error("Failed to create character");
                 }
             });
@@ -65,7 +63,6 @@ export class CharacterRepository {
                     character = patchDbObject(requestObject, character, id);
                     character.save(err => {
                         if (err) {
-                            console.log(err);
                         }
                     });
                 }

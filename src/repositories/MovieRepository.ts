@@ -17,13 +17,11 @@ export class MovieRepository {
             releaseDate
         }).save()
             .then(movie=> {
-                console.log(movie);
                 movieDao.id = movie._id;
                 return movie;
             })
             .catch(err =>{
                 if(err) {
-                    console.log(err);
                     throw new Error("Failed to create movie");
                 }
             });
@@ -57,7 +55,6 @@ export class MovieRepository {
                     dbMovie = patchDbObject(updateRequest, dbMovie, id);
                     dbMovie.save(err => {
                         if(err) {
-                            console.log(err);
                             throw new Error("Could not update movie");
                         }
                         return convertFromDbObject(dbMovie, new MovieDao());
@@ -73,7 +70,6 @@ export class MovieRepository {
             .then(() => {return null})
             .catch(err => {
                 if(err) {
-                    console.log(err);
                     throw new Error("Could not update movie");
                 }
             });
