@@ -1,22 +1,17 @@
 import UuidStatic = require("uuid");
 
 export class Movie {
-    public id:string;
-    public name:string;
-    public releaseDate:string;
-    public series:string;
-    public canon:boolean;
-    public characterIds:string[];
-    public planetIds:string[];
+    id:string;
+    name:string;
+    releaseDate:Date;
+    description: string;
+    era:string;
 
-    constructor()
-    constructor(id?:string, name?:string, releaseDate?:string, series?:string, cancn?:boolean, characterIds?:string[], planetIds?:string[]) {
-        this.id = id || UuidStatic.v4.toString();
+    constructor(id?:string, name?:string, releaseDate?:string,description?:string,era?:string) {
+        this.id = id || UuidStatic.v4().toString();
         this.name = name || "";
-        this.releaseDate = releaseDate || "";
-        this.series = series || "";
-        this.canon = cancn || true;
-        this.characterIds = characterIds || [];
-        this.planetIds = planetIds || [];
+        this.releaseDate = releaseDate ? new Date(releaseDate) : new Date();
+        this.description = description || "";
+        this.era = era || "";
     }
 }
